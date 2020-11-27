@@ -4,6 +4,8 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.databinding.DataBindingUtil
+import com.mukulcode.demuxacademy.databinding.ActivityMainBinding
 import org.eazegraph.lib.charts.PieChart
 import org.eazegraph.lib.models.PieModel
 

@@ -5,6 +5,9 @@ plugins {
 
 android {
     compileSdkVersion 30
+    buildFeatures {
+        dataBinding true
+    }
     buildToolsVersion "29.0.3"
 
     defaultConfig {
@@ -34,6 +37,8 @@ android {
 
 dependencies {
 
+    def nav_version = "2.3.1"
+
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.2'
     implementation 'androidx.appcompat:appcompat:1.2.0'
@@ -47,4 +52,15 @@ dependencies {
     //For Pie Chart
     implementation 'com.github.blackfizz:eazegraph:1.2.2@aar'
     implementation 'com.nineoldandroids:library:2.4.0'
+
+    // Navigation
+    implementation "android.arch.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "android.arch.navigation:navigation-ui-ktx:$nav_version"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    // Feature module Support
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
+
+    // Testing Navigation
+    androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
 }
