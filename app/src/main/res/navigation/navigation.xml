@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/homeFragment2"
         android:name="com.mukulcode.demuxacademy.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment2_to_dpFragment2"
             app:destination="@id/dpFragment2" />
@@ -17,6 +17,16 @@
     <fragment
         android:id="@+id/dpFragment2"
         android:name="com.mukulcode.demuxacademy.DpFragment"
-        android:label="fragment_dp"
+        android:label="Dynamic Programming"
         tools:layout="@layout/fragment_dp" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.mukulcode.demuxacademy.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.mukulcode.demuxacademy.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
 </navigation>

@@ -1,5 +1,6 @@
 package com.mukulcode.demuxacademy
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,6 +10,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import com.mukulcode.demuxacademy.databinding.FragmentHomeBinding
+import org.eazegraph.lib.models.PieModel
 
 
 /**
@@ -28,6 +30,13 @@ class HomeFragment : Fragment() {
             Navigation.findNavController(view)
                 .navigate(HomeFragmentDirections.actionHomeFragment2ToDpFragment2())
         }
+
+        val bindingPieChart = binding.piechart
+        bindingPieChart.addPieSlice(PieModel("Todo", 65F, Color.parseColor("#007afe")))
+        bindingPieChart.addPieSlice(PieModel("Solved", 25F, Color.parseColor("#08a045")))
+        bindingPieChart.addPieSlice(PieModel("Attempted", 15F, Color.parseColor("#FBC233")))
+
+        bindingPieChart.startAnimation()
         return binding.root
     }
 }
