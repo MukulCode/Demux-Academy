@@ -25,7 +25,7 @@ Make sure you have the latest version of [Android Studio](https://developer.andr
 
 
 ## Running the application
-This is a prototype and does not require any kind of key, so feel free to hit the green run icon after a succesfull build.
+This is a prototype and does not require any kind of key, so feel free to hit the green run icon after a successful build.
 
 ## Troubleshooting your local environment
 
