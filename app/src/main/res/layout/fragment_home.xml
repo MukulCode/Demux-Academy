@@ -516,7 +516,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/metropolis_medium"
-                                    android:text="Year Wise"
+                                    android:text="Graph"
                                     android:textColor="#ff1744"
                                     android:textSize="17sp" />
 
@@ -547,7 +547,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/metropolis_medium"
-                                    android:text="CompanyWise"
+                                    android:text="HashMap"
                                     android:textColor="#69f0ae"
                                     android:textSize="17sp" />
                             </LinearLayout>

@@ -4,6 +4,10 @@
 
     <item android:title="Profile"
         android:id="@+id/profileFragment"/>
-    <item android:title="About"
+    <item android:title="Year Wise Questions" />
+    <item android:title="Comapny Wise Questions" />
+    <item android:title="Interview Specific Questions" />
+    <item android:title="Online Test Specific Questions" />
+    <item android:title="About Application"
         android:id="@+id/aboutFragment"/>
 </menu>
